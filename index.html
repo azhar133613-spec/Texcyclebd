@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TexCycle BD</title>
+<style>
+body{
+margin:0;
+font-family:Arial;
+background:#0f172a;
+color:white;
+text-align:center;
+}
+header{
+background:#111827;
+padding:15px;
+font-size:20px;
+font-weight:bold;
+}
+.hero{
+padding:60px 20px;
+background:linear-gradient(to right,#1e3a8a,#0f172a);
+}
+button{
+padding:12px 20px;
+margin-top:20px;
+background:#22c55e;
+border:none;
+border-radius:25px;
+color:white;
+font-size:16px;
+}
+.section{
+padding:40px 20px;
+}
+.card{
+background:#1e293b;
+margin:15px;
+padding:15px;
+border-radius:10px;
+}
+input,textarea{
+width:90%;
+padding:10px;
+margin:8px;
+border-radius:8px;
+border:none;
+}
+footer{
+padding:15px;
+background:#020617;
+font-size:12px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+TexCycle BD
+</header>
+
+<div class="hero">
+<h2>Bangladesh Textile Waste Marketplace</h2>
+<p>Bulk Waste • Verified Suppliers • Direct Negotiation</p>
+<button onclick="document.getElementById('products').scrollIntoView()">Browse Waste</button>
+</div>
+
+<div class="section" id="products">
+<h3>Available Waste Lots</h3>
+
+<div class="card">
+<h4>Cotton Knit Cutting</h4>
+<p>GSM: 160</p>
+<p>Quantity: 5 Tons</p>
+<p>Location: Gazipur</p>
+<p>Price: Negotiable</p>
+</div>
+
+<div class="card">
+<h4>Polyester Scrap</h4>
+<p>GSM: 180</p>
+<p>Quantity: 3 Tons</p>
+<p>Location: Narayanganj</p>
+<p>Price: Negotiable</p>
+</div>
+
+</div>
+
+<div class="section">
+<h3>Bulk Inquiry</h3>
+<form action="https://formspree.io/f/yourcode" method="POST">
+<input type="text" name="name" placeholder="Your Name" required>
+<input type="email" name="email" placeholder="Your Email" required>
+<textarea name="message" placeholder="Your Requirement" required></textarea>
+<button type="submit">Send Inquiry</button>
+</form>
+</div>
+
+<footer>
+© 2026 TexCycle BD
+</footer>
+
+</body>
+</html>
